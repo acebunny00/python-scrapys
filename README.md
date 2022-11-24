@@ -45,8 +45,10 @@ py -m pip install --upgrade pip
 py -m pip install scrapy
 py -m pip install scrapy-fake-useragent
 py -m pip install scrapy-playwright
-:: py -m pip install selenium
-:: py -m pip install webdriver-manager
+py -m pip install beautifulsoup4
+py -m pip install selenium
+py -m pip install webdriver-manager
+py -m pip freeze > requirements.txt
 
 :: 모듈 확인
 py --version
