@@ -79,7 +79,7 @@ scrapy genspider -t crawl CrawlScroll quotes.toscrape.com/scroll
 code .
 ```
 
-### 파이썬 부록_가상환경
+### [파이썬 부록_가상환경](https://docs.python.org/ko/3/library/venv.html, "python docs venv")
 
 ```shell
 :: 파이썬 가상환경 설치 - 이름: projects
@@ -90,4 +90,7 @@ projects\Scripts\activate.bat
 
 :: 가상환경 나오기
 projects\Scripts\deactivate.bat
+
+:: 가상환경 삭제
+rmdir /s /q projects
 ```
