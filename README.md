@@ -36,11 +36,11 @@ py -m pip freeze
 :: 모듈 기록
 py -m pip freeze > requirements.txt
 
+:: 설치 모듈 업그레이드
+py -m pip install --upgrade pip
+
 :: 모듈 초기화
 py -m pip uninstall -y -r requirements.txt
-
-:: 메인 모듈 업그레이드
-py -m pip install --upgrade pip
 
 :: 모듈 설치
 py -m pip install scrapy
