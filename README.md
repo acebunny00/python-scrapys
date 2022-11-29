@@ -25,22 +25,32 @@
 - C:\Users\Admin\AppData\Roaming\Python\Python310\Scripts
 - %AppData%\Python\Python310\Scripts
 
+### [가상환경](https://docs.python.org/ko/3/library/venv.html "python docs venv")
+
+```shell
+:: 가상환경 만들기 - 이름: scrapy_project
+py -m venv scrapy_project
+
+:: 가상환경 들어가기
+scrapy_project\Scripts\activate.bat
+
+:: 가상환경 나오기
+scrapy_project\Scripts\deactivate.bat
+
+:: 가상환경 삭제
+rmdir /s /q scrapy_project
+```
+
 ### 스크래피 설치
 
 ```shell
 :: [윈도우 + S]: cmd(명령 프롬프트) + [Enter]
 
-:: 현재 설치된 모듈 보기
-py -m pip freeze
-
-:: 모듈 기록
-py -m pip freeze > requirements.txt
+:: 가상환경 들어가기
+scrapy_project\Scripts\activate.bat
 
 :: 설치 모듈 업그레이드
 py -m pip install --upgrade pip
-
-:: 모듈 초기화
-py -m pip uninstall -y -r requirements.txt
 
 :: 모듈 설치
 py -m pip install scrapy-playwright
@@ -55,6 +65,10 @@ py --version
 py -m pip --version
 py -m pip list
 :: explorer %AppData%\Python\Python310\site-packages
+
+:: 모듈 초기화
+py -m pip uninstall -y -r requirements.txt
+
 ```
 
 ### 스크래피 프로젝트 생성 및 스파이더(크롤러) 템플릿 생성
@@ -77,20 +91,4 @@ scrapy genspider -t crawl CrawlScroll quotes.toscrape.com/scroll
 :: scrapy genspider -t csvfeed Csvfeed quotes.toscrape.com
 :: scrapy genspider -t xmlfeed Xmlfeed quotes.toscrape.com
 code .
-```
-
-### [파이썬 부록_가상환경](https://docs.python.org/ko/3/library/venv.html "python docs venv")
-
-```shell
-:: 파이썬 가상환경 설치 - 이름: projects
-py -m venv projects
-
-:: 가상환경 들어가기
-projects\Scripts\activate.bat
-
-:: 가상환경 나오기
-projects\Scripts\deactivate.bat
-
-:: 가상환경 삭제
-rmdir /s /q projects
 ```
