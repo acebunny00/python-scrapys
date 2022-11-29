@@ -23,6 +23,7 @@
 - (아래와 유사한 경로를 추가)
 - C:\Program Files\Python310
 - C:\Users\Admin\AppData\Roaming\Python\Python310\Scripts
+- %AppData%\Python\Python310\Scripts
 
 ### 스크래피 설치
 
