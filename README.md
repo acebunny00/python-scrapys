@@ -43,18 +43,18 @@ py -m pip install --upgrade pip
 py -m pip uninstall -y -r requirements.txt
 
 :: 모듈 설치
-py -m pip install scrapy
-py -m pip install scrapy-fake-useragent
 py -m pip install scrapy-playwright
-py -m pip install beautifulsoup4
-py -m pip install selenium
-py -m pip install webdriver-manager
+py -m pip install scrapy-fake-useragent
+:: py -m pip install beautifulsoup4
+:: py -m pip install selenium
+:: py -m pip install webdriver-manager
 py -m pip freeze > requirements.txt
 
 :: 모듈 확인
 py --version
 py -m pip --version
 py -m pip list
+:: explorer %AppData%\Python\Python310\site-packages
 ```
 
 ### 스크래피 프로젝트 생성 및 스파이더(크롤러) 템플릿 생성
