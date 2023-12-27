@@ -1,3 +1,3 @@
-scrapy startproject tutorial
+%HomePath%\venv\scrapy\scrapy startproject tutorial
 cd tutorial
-scrapy genspider example example.com
+%HomePath%\venv\scrapy\scrapy genspider example example.com

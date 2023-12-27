@@ -1,1 +1,1 @@
-scrapy crawl Docs
+%HomePath%\venv\scrapy\scrapy crawl Docs
